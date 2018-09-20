@@ -109,7 +109,7 @@ class TestLogin(unittest.TestCase):
             mins += 1
         screen = self.driver.get_screenshot_as_png()
         image = Image.open(io.BytesIO(screen))
-        image.save('screenshots/4.png')
+        image.save('screenshots/5.png')
         self.driver.find_element_by_xpath('//*[@id="steps-uid-0"]/div[3]/ul/li[3]/a').click()
 
     def tearDown(self):
